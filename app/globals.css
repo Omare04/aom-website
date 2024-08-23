@@ -8,6 +8,13 @@
   --background-end-rgb: 255, 255, 255;
 }
 
+@layer base {
+  body {
+    @apply font-sans;
+  }
+}
+
+
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
