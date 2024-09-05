@@ -100,7 +100,7 @@ export const InfiniteMovingCards = ({
             key={idx}
           >
             <blockquote>
-              <img src={image} alt={`Catering Image ${idx + 1}`} />
+              <img src={image} alt={`Image ${idx + 1}`} />
             </blockquote>
           </li>
         ))}

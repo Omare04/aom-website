@@ -46,7 +46,7 @@ const CompanyOverview = () => {
         </video> */}
         {/* <TextGenerateEffect duration={2} filter={false} words={overview} /> */}
         <div className="flex gap-9 py-3">
-          <p className="text-lg font-light text-black dark:text-white pl-2">
+          <p className="text-lg text-black dark:text-white pl-2">
             Established in 2015, AOM Aviation Group offers comprehensive
             aviation services and is steadily expanding. The company provides
             private charters through AOM Air Charter and air ambulance services
@@ -476,7 +476,15 @@ export function Globe() {
 const overview =
   "Established in 2015, AOM Aviation Group offers comprehensive aviation services and is steadily expanding. The company provides private charters through AOM Air Charter and air ambulance services via AOM Air Ambulance. Their Maintenance division specializes in line and base aircraft maintenance, all with a focus on customer satisfaction, high-quality service, and excellent value.";
 
-export function CardDemo({ title, img, description }) {
+export function CardDemo({
+  title,
+  img,
+  description,
+}: {
+  title: string;
+  img: string;
+  description: string;
+}) {
   return (
     <div className="max-w-xs w-full group/card h-full">
       <div
