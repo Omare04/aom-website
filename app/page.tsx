@@ -7,8 +7,8 @@ import CompanyOverview from "./components/home-components/companyOverview";
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
-      <AuroraBackground>
+    <main className="min-h-screen bg-neutral-900">
+      {/* <AuroraBackground> */}
         <motion.div
           initial={{ opacity: 0.0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -17,13 +17,13 @@ export default function Home() {
             duration: 0.8,
             ease: "easeInOut",
           }}
-          className="w-full flex flex-col h-full"
+          className="w-full flex flex-col h-auto"
         >
-          <Navbar className="top-2" />
+          <Navbar/>
           <Homepage />
           <CompanyOverview/>
         </motion.div>
-      </AuroraBackground>
+      {/* </AuroraBackground> */}
     </main>
   );
 }
